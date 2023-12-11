@@ -10,6 +10,7 @@ from qiskit.visualization import plot_histogram, plot_bloch_multivector
 from numpy.random import randint
 import numpy as np
 n=100
+print('hello')
 def encode_message(bits, bases):
     message=[]
     for i in range(len(bits)):
