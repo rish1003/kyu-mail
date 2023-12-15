@@ -32,7 +32,7 @@ class _homepageState extends State<homepage> {
         watch wt = watch(
           profile_image:
               'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/RedCat_8727.jpg/1200px-RedCat_8727.jpg',
-          received_email: 'EMAILID',
+          received_email: 'emailid@qmail.com',
           message:
               'Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           time_arrived: "11:11",
@@ -157,11 +157,7 @@ class _homepageState extends State<homepage> {
                                       height: 100,
                                       child: TextButton(
                                         onPressed: () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      openmail()));
+                                          Get.to(() => openmail(emailid: data.received_email));
                                         },
                                         child: Row(
                                           children: [
