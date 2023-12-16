@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1025475050051",
+    "project_id": "kyumail-407810",
+    "storage_bucket": "kyumail-407810.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025475050051:android:6a19d61450eae11d86f2f6",
+        "android_client_info": {
+          "package_name": "com.example.kyu_mail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025475050051-5lmui81hojp2374277c3kilf1h570bov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kyu_mail",
+            "certificate_hash": "1699afca44f4991a89d12e2e8f9144e863b9c69d"
+          }
+        },
+        {
+          "client_id": "1025475050051-jeeh7na3coge7fpms6ihvf24do7elki4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEePR-4jRpoN-d42F8foEs6Ldd4eLZjiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025475050051-jeeh7na3coge7fpms6ihvf24do7elki4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1025475050051-f22kmfgnafju661rnbnv48ft0ki9sd4f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.kyuMail"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
