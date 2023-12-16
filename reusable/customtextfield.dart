@@ -1,3 +1,4 @@
+import 'package:email_validator/email_validator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -23,8 +24,15 @@ class CustomTextField extends StatelessWidget {
       ),
       controller: controller,
       onSubmitted: (value) {
-        list1.add(value);
-        controller.clear();
+        List<String> emails = value.split(',');
+        for (String email in emails) {
+          String trimmedEmail = email.trim();
+          if (EmailValidator.validate(trimmedEmail)) {
+            list1.add(trimmedEmail);
+          } else {
+            // If the entered email is not valid, you can show an error message or handle it accordingly
+          }
+        }
       },
     );
   }
